@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Car CRM - dashboard</title>
+
+        <link href="static/styles/input.css" rel="stylesheet" type="text/css">
+        <link href="static/styles/dashboard.css" rel="stylesheet" type="text/css">
+        <link href="static/styles/user_selector.css" rel="stylesheet" type="text/css">
+        <script type="module" src="static/scripts/menu.js"></script>
+        <script type="module" src="static/scripts/update_user_privileges.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="navigation"></div>
+        </nav>
+
+        <main>
+            <div class="content"> 
+                <form class="update-privileges-form">
+                    <div class="inline-elements">
+                        <div class="privileges"></div>
+                        <input type="button" class="save" value="Zapisz">
+                        <p class="result"></p>
+                    </div>
+                    <div class="inline-elements user-selector-list"></div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

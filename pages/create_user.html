@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Car CRM - dashboard</title>
+
+        <link href="static/styles/input.css" rel="stylesheet" type="text/css">
+        <link href="static/styles/dashboard.css" rel="stylesheet" type="text/css">
+        <script type="module" src="static/scripts/menu.js"></script>
+        <script type="module" src="static/scripts/create_user.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="navigation"></div>
+        </nav>
+
+        <main>
+            <div class="content"> 
+                <form class="create-user-form">
+                    <input type="text" class="nick" placeholder="Nick"><br>
+                    <input type="password" class="password" placeholder="Hasło"><br>
+                    <input type="password" class="password-repeat" placeholder="Powtórz hasło"><br>
+                    <input type="button" class="create" value="Stwórz"><br>
+                    <p class="result"></p>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

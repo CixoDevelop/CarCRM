@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Car CRM - dashboard</title>
+
+        <link href="static/styles/input.css" rel="stylesheet" type="text/css">
+        <link href="static/styles/dashboard.css" rel="stylesheet" type="text/css">
+        <link href="static/styles/settings.css" rel="stylesheet" type="text/css">
+        <script type="module" src="static/scripts/menu.js"></script>
+        <script type="module" src="static/scripts/settings.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="navigation"></div>
+        </nav>
+
+        <main>
+            <div class="content">
+                <div class="user-settings">
+                    <h1>Ustawienia</h1>
+                    <a href="update_password"><input type="button" value="Zmień hasło"/></a><br>
+                    <a href="change_personal_data"><input type="button" value="Zarządzaj notatkami"/></a><br>
+                    <a href="dashboard"><input type="button" value="Pokaż uprawnienia"/></a><br>
+                </div>
+
+                <div class="admin-row">
+                    <h1>Administracja</h1>
+                    <a href="create_user"><input type="button" value="Dodaj użytkownika"></a><br>
+                    <a href="delete_user"><input type="button" value="Usuń użytkownika"></a><br>
+                    <a href="update_user_password"><input type="button" value="Wymuś zmianę hasła"></a><br>
+                    <a href="update_user_privileges"><input type="button" value="Zmień uprawnienia użytkownika"></a><br>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

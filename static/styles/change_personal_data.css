@@ -1,0 +1,40 @@
+.personal-data .item {
+    width: 100%;
+    display: block;
+}
+
+.appender {
+    margin-bottom: 80px;
+}
+
+.personal-data .key, .personal-data .value, .personal-data .deleter {
+    border: 3px solid white;
+    padding: 10px;
+    margin: 0px;
+    display: inline-block;
+    width: calc(40% - 50px - 6px);
+    vertical-align: middle;
+}
+
+.personal-data .deleter {
+    color: red;
+    font-weight: bold;
+    background-color: white;
+    width: 80px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+.personal-data .deleter:hover {
+    background-color: #0f0f0f;
+}
+
+@media only screen and (max-width: 600px) {
+    .personal-data .key, .personal-data .value, .personal-data .deleter { 
+        width: 90%;
+    }
+
+    .personal-data .deleter {
+        margin-bottom: 30px;
+    }
+}

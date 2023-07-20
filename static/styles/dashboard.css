@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 20px;
+}
+
+p, a, input, label {
+    font-size: 17px;
+}
+
+.navigation {
+    width: 200px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    border-right: 3px solid white;
+}
+
+.navigation ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+    font-size: 0px;
+}
+
+.navigation ul li {
+    width: calc(100% - 16px);
+    margin: 0px;
+    padding: 8px;
+    border-top: 3px solid white;
+    color: white;
+    transition: color 0.5s, background-color 0.5s, border-color 0.5s;
+}
+
+.navigation ul li:hover, .navigation ul a:focus li {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.navigation ul a:last-child li {
+    border-bottom: 3px solid white;
+}
+
+.content {
+    width: calc(100% - 230px);
+    padding: 15px;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    text-align: center;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.privileges {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.privileges li {
+    margin: 0px;
+    padding: 8px;
+    width: calc(100% - 16px - 6px);
+    border: 3px solid white;
+}
+
+.key {
+    text-align: center !important;
+    width: calc(30% - 16px - 6px);
+}
+
+.value {
+    width: calc(70% - 16px - 6px);
+}
+
+.key, .value {
+    border: 3px solid white;
+    display: inline-block;
+    margin: 0px;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.create-window {
+    width: calc(80% - 40px);
+    height: calc(80% - 40px);
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    padding: 20px;
+    border: 3px white solid;
+    border-radius: 20px;
+    z-index: 1000;
+    background-color: black;
+    text-align: center;
+    overflow: auto;
+}
+
+.create-window div input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inline-elements {
+    display: inline-block;
+    width: calc(50% - 1em);
+    vertical-align: middle;
+}
+
+.cars-list {
+    text-align: center;
+    font-size: 0px;
+}
+
+.car {
+    border: 3px solid white;
+    vertical-align: middle;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 500px;
+    margin: 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.car .key {
+    width: calc(30% - 1em - 40px);
+    border: 3px solid white;
+    display: inline-block;
+    padding: 20px;
+    margin: 0px;
+}
+
+.car .value {
+    width: calc(70% - 40px);
+    padding: 20px;
+    border: 3px solid white;
+    display: inline-block;
+    margin: 0px;
+}
+
+.car img {
+    width: 80%;
+    border-radius: 20px;
+    border: white solid 3px;
+    margin: 10px auto 10px auto;
+}
+
+.car a {
+    display: block;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .inline-elements {
+        display: block;
+        width: 100%;
+    }
+
+    .navigation {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid white;
+    }
+
+    .navigation ul li {
+        display: inline-block;
+        width: 100px;
+        border-bottom: none;
+        border-top: none;
+        border-left: 3px solid white;
+    }
+
+    .navigation ul a:last-child li {
+        border-bottom: none;
+        border-right: 3px solid white;
+    }
+
+    .content {
+        width: calc(100% - 40px);
+        margin: 20px;
+        padding: 0px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navigation ul li {
+        display: block;
+        border-left: none;
+        border-top: 3px solid white;
+        width: calc(100% - 16px);
+    }
+
+    .navigation ul a:last-child li {
+        border-right: none;
+    }
+
+    .items .key, .items .value {
+        width: calc(100% - 16px - 6px);
+    }
+
+    .items .value {
+        margin-bottom: 20px;
+    }   
+}
